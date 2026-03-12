@@ -42,3 +42,38 @@ fn full_expression() {
         Token::Dot,
     ]);
 }
+
+#[test]
+fn everything() {
+    let tokens = Lexer::new("3[c#4. 2+. d`3 5> 1< 2= 4, 1~ | _ * \\ { 60 } $-]").tokenize();
+    assert_eq!(tokens, vec![
+        Token::Number(3),
+        Token::OpenBracket,
+        Token::Note { letter: 'c', accidental: Some('#'), octave: Some(4) },
+        Token::Dot,
+        Token::Number(2),
+        Token::Plus,
+        Token::Dot,
+        Token::Note { letter: 'd', accidental: Some('`'), octave: Some(3) },
+        Token::Number(5),
+        Token::Greater,
+        Token::Number(1),
+        Token::Less,
+        Token::Number(2),
+        Token::Equal,
+        Token::Number(4),
+        Token::Comma,
+        Token::Number(1),
+        Token::Tilde,
+        Token::Pipe,
+        Token::Underscore,
+        Token::Star,
+        Token::Backslash,
+        Token::OpenBrace,
+        Token::Number(60),
+        Token::CloseBrace,
+        Token::Dollar,
+        Token::Minus,
+        Token::CloseBracket,
+    ]);
+}
