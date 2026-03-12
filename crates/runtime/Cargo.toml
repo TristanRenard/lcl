@@ -5,3 +5,5 @@ edition = "2024"
 
 [dependencies]
 lcl-ast = { path = "../ast" }
+lcl-lexer = { path = "../lexer" }
+lcl-parser = { path = "../parser" }
