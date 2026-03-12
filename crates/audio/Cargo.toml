@@ -1,0 +1,8 @@
+[package]
+name = "lcl-audio"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+lcl-runtime = { path = "../runtime" }
+rodio = "0.19"
