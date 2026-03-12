@@ -375,6 +375,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "lcl-cli"
+version = "0.1.0"
+dependencies = [
+ "lcl-audio",
+ "lcl-lexer",
+ "lcl-parser",
+ "lcl-runtime",
+]
+
+[[package]]
 name = "lcl-lexer"
 version = "0.1.0"
 

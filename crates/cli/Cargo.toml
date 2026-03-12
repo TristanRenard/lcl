@@ -1,0 +1,10 @@
+[package]
+name = "lcl-cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+lcl-lexer = { path = "../lexer" }
+lcl-parser = { path = "../parser" }
+lcl-runtime = { path = "../runtime" }
+lcl-audio = { path = "../audio" }
