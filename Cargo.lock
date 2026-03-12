@@ -17,3 +17,10 @@ dependencies = [
  "lcl-ast",
  "lcl-lexer",
 ]
+
+[[package]]
+name = "lcl-runtime"
+version = "0.1.0"
+dependencies = [
+ "lcl-ast",
+]
