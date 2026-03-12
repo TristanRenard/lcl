@@ -13,3 +13,7 @@ version = "0.1.0"
 [[package]]
 name = "lcl-parser"
 version = "0.1.0"
+dependencies = [
+ "lcl-ast",
+ "lcl-lexer",
+]
